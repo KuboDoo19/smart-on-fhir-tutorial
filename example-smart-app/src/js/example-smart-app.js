@@ -93,6 +93,7 @@
       ldl: {value: ''},
       hdl: {value: ''},
       temp: {value: ''},
+      device: {value: ''}
     };
   }
 
@@ -137,6 +138,7 @@
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
     $('#temp').html(p.temp);
+    $('#device').html(p.device);
   };
 
 })(window);
