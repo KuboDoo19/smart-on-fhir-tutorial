@@ -35,7 +35,10 @@
           var byCodes = smart.byCodes(obv, 'code');
           console.log (device);
           var gender = patient.gender;
-
+          var devicestring = [];
+          for (var i = 0;i < device.length; i++){ 
+          devicestring.push(device[i].deviceName[0].name);
+          }
           var fname = '';
           var lname = '';
 
@@ -57,7 +60,7 @@
           p.fname = fname;
           p.lname = lname;
           p.height = getQuantityValueAndUnit(height[0]);
-          p.device = device;
+          p.device = devicestring.join(", ");
 
           if (typeof systolicbp != 'undefined')  {
             p.systolicbp = systolicbp;
