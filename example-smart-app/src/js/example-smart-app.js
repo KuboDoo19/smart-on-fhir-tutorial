@@ -25,8 +25,8 @@
                       }
                     }
                   });
-       // var device = smart.patient.api.fetchAll({
-       //             type: 'Device',
+        var device = smart.patient.api.fetchAll({
+                   type: 'Device'})
 
 
         $.when(pt, obv).fail(onError);
